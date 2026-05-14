@@ -34,7 +34,7 @@ export default function Navbar() {
             <ShoppingBag size={18} className="text-white" />
           </div>
           <span className="text-xl font-display font-bold tracking-tight text-slate-800">
-            Lumina<span className="text-brand-primary">Gifts</span>
+            Anudeep<span className="text-brand-primary"> Gifts</span>
           </span>
         </div>
 

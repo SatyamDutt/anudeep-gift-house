@@ -181,7 +181,7 @@ export default function App() {
                   <span className="text-white font-bold text-lg">L</span>
                 </div>
                 <span className="text-xl font-display font-bold tracking-tight">
-                  Lumina<span className="text-brand-primary">Gifts</span>
+                  Anudeep <span className="text-brand-primary">Gifts</span>
                 </span>
               </div>
               <p className="text-slate-500 text-sm leading-relaxed mb-8">
@@ -228,11 +228,11 @@ export default function App() {
               <ul className="space-y-5">
                 <li className="flex items-start gap-4">
                   <MapPin size={18} className="text-brand-primary shrink-0" />
-                  <span className="text-slate-500 text-sm leading-tight font-medium">5th Avenue, Innovation Park,<br />New York, NY 10001</span>
+                  <span className="text-slate-500 text-sm leading-tight font-medium">Basudevpur, Samastirpur<br />Bihar, 848102 (INDIA)</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <Phone size={18} className="text-brand-primary shrink-0" />
-                  <span className="text-slate-500 text-sm font-medium">+1 (800) LUMINA-GIFT</span>
+                  <span className="text-slate-500 text-sm font-medium">(+91) 9199866230</span>
                 </li>
                 <li className="flex items-center gap-4">
                   <Mail size={18} className="text-brand-primary shrink-0" />
