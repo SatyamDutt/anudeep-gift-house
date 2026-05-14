@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { ShoppingBag, MessageCircle, Menu, X, Search, Palette } from 'lucide-react';
 import { useTheme, ThemeType } from '../context/ThemeContext';
+import { WHATSAPP_URL } from '../constants';
 
 const THEMES: { id: ThemeType; color: string; label: string }[] = [
   { id: 'blue', color: '#3B82F6', label: 'Azure Blue' },
@@ -97,7 +98,7 @@ export default function Navbar() {
           </div>
 
           <a 
-            href="https://wa.me/yournumber" 
+            href={WHATSAPP_URL} 
             target="_blank" 
             rel="noopener noreferrer"
             className="hidden md:flex items-center gap-2 px-5 py-2.5 rounded-full btn-gradient text-sm font-semibold"
@@ -154,7 +155,9 @@ export default function Navbar() {
                 </a>
               ))}
               <a 
-                href="https://wa.me/yournumber" 
+                href={WHATSAPP_URL} 
+                target="_blank"
+                rel="noopener noreferrer"
                 className="flex items-center justify-center gap-2 w-full py-3 rounded-xl btn-gradient font-bold"
               >
                 <MessageCircle size={20} />

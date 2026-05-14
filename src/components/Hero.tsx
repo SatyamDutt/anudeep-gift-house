@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { ArrowRight, Sparkles, MessageCircle } from 'lucide-react';
+import { WHATSAPP_URL } from '../constants';
 
 export default function Hero() {
   return (
@@ -66,7 +67,7 @@ export default function Hero() {
               <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
             </a>
             <a 
-              href="https://wa.me/yournumber"
+              href={WHATSAPP_URL}
               target="_blank"
               rel="noopener noreferrer"
               className="w-full sm:w-auto px-10 py-5 rounded-2xl bg-white border border-brand-accent text-slate-700 font-bold text-lg hover:bg-brand-accent/30 transition-colors shadow-brand-soft flex items-center justify-center gap-2"

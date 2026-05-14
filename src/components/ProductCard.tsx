@@ -2,6 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { Product } from '../types';
 import { MessageCircle, Star } from 'lucide-react';
+import { WHATSAPP_NUMBER } from '../constants';
 
 interface ProductCardProps {
   product: Product;
@@ -12,7 +13,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, onViewDetails }) => 
   const handleWhatsAppOrder = (e: React.MouseEvent) => {
     e.stopPropagation();
     const message = encodeURIComponent(`Hi, I want to order "${product.name}"`);
-    window.open(`https://wa.me/yournumber?text=${message}`, '_blank');
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
   };
 
   return (

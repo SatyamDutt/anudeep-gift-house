@@ -8,7 +8,7 @@ import Benefits from './components/Benefits';
 import OccasionSection from './components/OccasionSection';
 import Testimonials from './components/Testimonials';
 import CTABanner from './components/CTABanner';
-import { PRODUCTS, CATEGORIES } from './constants';
+import { PRODUCTS, CATEGORIES, CONTACT_PHONE_DISPLAY, WHATSAPP_URL } from './constants';
 import { Product } from './types';
 import { Instagram, Twitter, Facebook, Mail, MapPin, Phone, ArrowUpRight } from 'lucide-react';
 
@@ -232,7 +232,14 @@ export default function App() {
                 </li>
                 <li className="flex items-center gap-4">
                   <Phone size={18} className="text-brand-primary shrink-0" />
-                  <span className="text-slate-500 text-sm font-medium">(+91) 9199866230</span>
+                  <a
+                    href={WHATSAPP_URL}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-slate-500 text-sm font-medium hover:text-brand-primary transition-colors"
+                  >
+                    {CONTACT_PHONE_DISPLAY}
+                  </a>
                 </li>
                 <li className="flex items-center gap-4">
                   <Mail size={18} className="text-brand-primary shrink-0" />

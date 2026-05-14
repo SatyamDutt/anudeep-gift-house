@@ -1,5 +1,6 @@
 import { motion } from 'motion/react';
 import { MessageCircle, ArrowRight } from 'lucide-react';
+import { WHATSAPP_URL } from '../constants';
 
 export default function CTABanner() {
   return (
@@ -33,7 +34,9 @@ export default function CTABanner() {
                 <ArrowRight size={20} className="transition-transform group-hover:translate-x-1" />
               </button>
               <a 
-                href="https://wa.me/yournumber"
+                href={WHATSAPP_URL}
+                target="_blank"
+                rel="noopener noreferrer"
                 className="w-full sm:w-auto px-10 py-5 rounded-2xl bg-white border border-brand-accent text-slate-900 font-bold text-lg shadow-brand-soft hover:bg-brand-accent/30 transition-all flex items-center justify-center gap-2"
               >
                 <MessageCircle size={20} className="text-emerald-500" />

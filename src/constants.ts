@@ -240,3 +240,7 @@ export const TESTIMONIALS: Testimonial[] = [
     avatar: 'https://images.unsplash.com/photo-1438761681033-6461ffad8d80?q=80&w=200&auto=format&fit=crop',
   },
 ];
+
+export const WHATSAPP_NUMBER = '9199866230';
+export const WHATSAPP_URL = `https://wa.me/${WHATSAPP_NUMBER}`;
+export const CONTACT_PHONE_DISPLAY = '(+91) 9199866230';

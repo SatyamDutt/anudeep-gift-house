@@ -2,6 +2,7 @@ import React from 'react';
 import { motion, AnimatePresence } from 'motion/react';
 import { X, MessageCircle, Truck, ShieldCheck, Heart, Share2 } from 'lucide-react';
 import { Product } from '../types';
+import { WHATSAPP_NUMBER } from '../constants';
 
 interface ProductModalProps {
   product: Product | null;
@@ -13,7 +14,7 @@ export default function ProductModal({ product, onClose }: ProductModalProps) {
 
   const handleWhatsAppOrder = () => {
     const message = encodeURIComponent(`Hi, I'm interested in the "${product.name}" (${product.category}). I'd like to place an order!`);
-    window.open(`https://wa.me/yournumber?text=${message}`, '_blank');
+    window.open(`https://wa.me/${WHATSAPP_NUMBER}?text=${message}`, '_blank');
   };
 
   return (
